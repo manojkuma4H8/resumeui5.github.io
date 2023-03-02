@@ -1,0 +1,524 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+:root{
+  --yellow:#4e4e45;
+}
+*{
+  font-family: 'Abril Fatface', cursive;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+*::selection{
+  background:var(--yellow);
+  color:rgba(49, 231, 207, 0.849);
+}
+html{
+  
+  overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+  width:1.4rem;
+}
+html::-webkit-scrollbar-track{
+  background: rgba(33, 34, 34, 0.849);
+}
+html::-webkit-scrollbar-thumb{
+  background-color: rgba(19, 20, 20, 0.849);
+}
+body{
+  background:#111;
+  overflow-x: hidden;
+  padding-left: 35rem;
+ 
+}
+section{
+  height: 100%;
+  background: #222;
+}
+header{
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1000;
+  height: 100%;
+  width:35rem;
+  background:rgba(49, 231, 207, 0.849);
+  display:flex;
+  align-items:center;
+  flex-flow:column;
+  text-align: center;
+}
+HEADER .user img{
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom:1rem;
+  border:.7rem solid var(--yellow);  
+}
+
+header .user h10{
+  color:rgb(15, 15, 15); 
+  font-size: 1.2rem;
+}
+header .user p{
+  color:rgb(26, 25, 24); 
+  font-size: 0.95rem;
+
+}
+header .navbar{
+  width: 100%;
+}
+header .navbar ul{
+  list-style: none;
+  padding:1rem 3rem;}
+
+header .navbar ul li a{
+  display: block;
+  padding:1rem;
+  margin:0.5rem 0;
+  background: #4e4e45;
+  color:rgb(248, 249, 250);
+  font-size: 1rem;
+  border-radius: 1.5rem;
+}
+
+.navbar1:hover{
+  background: rgb(42, 122, 197);
+}
+.home{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+ padding: 0 15rem;
+
+}
+.home h11{
+  color:rgb(241, 239, 245); 
+  font-size: 1.5rem;
+}
+.home p10{
+  
+  color:rgb(241, 239, 245);
+  font-size: 1.5rem;
+  
+}
+.home p11{
+  color:rgb(236, 233, 51);
+  font-size: 0.8rem;
+}
+section{
+  min-height: 100vh;
+  padding:1rem;
+}
+.btn{
+  padding:.7rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 5rem;
+
+}
+.btn i{
+  padding:0 .5rem;
+  font-size: 1rem;
+}
+.btn:hover{
+  background:rgba(49, 231, 207, 0.849) ;
+}
+.about .heading{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 1.7rem;
+  padding:0.5rem;
+  border-bottom: .1rem solid #f3f3ec;
+  color:rgb(241, 239, 245); 
+}
+.heading span{
+  
+  color:rgba(49, 231, 207, 0.849);
+}
+/*
+.about{
+  display: flex;
+  text-align: center;
+  flex-flow: column;
+ padding: 0 15rem;
+
+}*/
+.about .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.about .row .info{
+  width:20rem;
+  flex:1 1 8rem;
+  padding:2rem 1rem;
+  padding-left:6rem;
+}
+
+.about .row .info span{
+  font-weight: normal;
+  font-size: 1rem;
+  color:rgba(49, 231, 207, 0.849);
+  padding: 1rem 0;
+  flex-wrap: wrap;
+
+}
+.about .row .info h13{
+  font-weight: normal;
+  font-size: 1rem;
+  color:rgba(242, 248, 247, 0.849);
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.about .row .counter{
+  flex:1 1 48rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about .row .counter .box{
+
+  font-size: 0.9rem;
+  width:8rem;
+  height: 6rem;
+  background:#4b4b48;
+  text-align: center;
+  padding: 0.6rem;
+  margin:1rem;
+  flex-wrap: wrap;
+}
+
+.about .row .counter span{
+  font-weight: normal;
+  font-size: 1.5rem;
+  color:rgba(49, 231, 207, 0.849);
+  padding: 1rem 0;
+  flex-wrap: wrap;
+
+}
+.about .row .counter h14{
+  font-weight: normal;
+  color:rgba(242, 248, 247, 0.849);
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.education .box-container{
+  display: flex;
+  align-items: center;
+  
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+}
+.education .heading{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 1.7rem;
+  padding:0.5rem;
+  border-bottom: .1rem solid #f3f3ec;
+  color:rgb(241, 239, 245); 
+}
+.education .box-container .box{
+  width:27rem;
+  margin:1rem 1rem;
+  padding-left:2rem;
+  border-left: .2rem solid #fff;
+  position: relative;
+}
+.education .box-container .box span{
+  font-size: 1rem;
+  background: #4b4b48;
+  color:rgba(49, 231, 207, 0.849);
+  border-radius:2rem;
+  padding:.5rem 2.5rem;
+}
+.education .box-container .box h16{
+ padding-top: 1rem;
+  display: flex;
+  color: #fff;
+
+}
+.education .box-container .box p12{
+  display: flex;
+  color: #fff;
+
+}
+
+.education .box-container .box i{
+  position: absolute;
+  top: -3rem;
+  left:-1rem;
+  height: 0.2rem;
+  width:0.2rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color:rgba(208, 211, 17, 0.849);
+ 
+}
+
+.contact .heading{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 6rem;
+  font-size: 1.7rem;
+  padding:0.5rem;
+  border-bottom: .1rem solid #f3f3ec;
+  color:rgb(241, 239, 245); 
+}
+
+
+
+
+
+
+
+.contact .row{
+  display:flex;
+  flex-wrap:wrap;
+}
+.contact .row .content{
+  flex: 1 1 2rem;
+  padding:4rem;
+  padding-bottom:0;
+
+}
+.contact .row form{
+  flex: 1 1 45rem;
+  padding:2rem;
+  margin:2rem;
+  margin-bottom:4rem;
+
+}
+.contact h18{
+font-size: 1.5rem;
+color:rgba(169, 172, 36, 0.849);
+}
+.contact .info{
+font-weight: normal;
+font-size: 1rem;
+color:rgba(242, 248, 247, 0.849);
+padding: 1rem 0;
+flex-wrap: wrap;
+}
+.contact .row .boxmessage{
+  padding: 1rem 0;
+  width: 410px;
+  height: 160px;
+}
+.contact .row .name1{
+  padding: 1rem 0;
+  width: 410px;
+  height:0;
+  border-radius: 2rem;  
+}
+
+
+  
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+body{
+   
+    font-family: cursive;
+}
+.main-container{
+    width: 100%;
+}
+.flex-container{
+    width: 100%;
+    display: flex;
+    background-color: rgb(59, 70, 65);
+    height: 50px;
+    font-weight: bolder;
+    
+}
+  .menu {
+    margin:10px;
+  }
+
+
+
+.link{
+
+    color: seashell;
+    text-decoration: none;
+}
+.column2 {
+  padding-left: 750px;
+ 
+}
+h1{
+     color:rgb(80, 24, 170);
+    font-weight: bolder;
+    font-size: 2em;
+}
+h2{
+    color: rgb(80, 24, 170);
+    font-weight: bolder;
+    font-size: 2em;
+}
+h3{
+    color: rgb(80, 24, 170);
+    font-weight: bolder;
+    font-size: 2em;
+}
+h4{
+    color:rgb(80, 24, 170);
+    font-weight: bolder;
+    font-size: 2em;
+}
+p{
+    color: black; 
+}
+
+
+/*   about 
+
+.container {
+    position: relative;
+  }
+
+  .text-block {
+    position: absolute;
+    height: 250px;
+    width:100%;
+    top: 0px;
+    text-align: center;
+   
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+ 
+  h5{
+   
+    color: rgb(80, 24, 170);
+        font-weight: bolder;
+        font-size: 2.5em;
+        margin-block-start:0.6em;
+
+  }
+  p1{
+      color:black;
+      font-size: 20px;
+  }
+  h6{
+    color: rgb(80, 24, 170);
+    font-weight: bolder;
+    font-size: 2.5em;
+    margin-block-start:0.6em;
+    margin-block-end:0.6em;
+
+  }
+  .row {
+    display: flex;
+  }
+  
+  /* Create two equal columns that sits next to each other 
+  .column {
+    flex: 70.33%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom:30px ;
+  }
+  img{
+    display: flex;
+    top: 0px;
+    width:30%;
+    padding-left: 225px;
+    padding-bottom:1px ;
+    
+}
+  .bottom-left{
+     
+      text-align: center;
+  }
+  #gender{
+      padding-left: 20px;
+  }
+  footer{
+      
+      background-color: rgb(59, 70, 65);
+      color: rgb(221, 221, 207);
+     
+  }
+  .link1{
+      color: rgb(243, 140, 22);
+    text-decoration:none ;
+  }
+ 
+  h7{
+    padding-left:390px;
+    color: rgb(133, 217, 250);
+  }
+  h8{
+      font-weight: bolder;
+      padding-left: 25px;
+  }
+  p2{
+    font-weight: bolder;
+    padding-left: 40px;
+    padding-bottom:40px ;
+
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  .table{
+      padding-left:30px;
+      padding-bottom: 30px;
+  }
+  iframe{
+    padding-left:45px;
+    padding-bottom: 40px;
+  }
+  
+
+  
+
+
+
+
+/*.column{
+    margin: 5px;
+    background-color:rgb(255, 38, 0);
+    height: 200px;
+    font-weight: bolder;
+    text-align: center;
+}*/
+
